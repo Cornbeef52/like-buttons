@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Like/Dislike</title>
+  </head>
+
+  <body>
+    <button id="likeButton">
+      <img
+        src="https://i.pinimg.com/originals/39/44/6c/39446caa52f53369b92bc97253d2b2f1.png"
+        alt="Like"
+        width="20"
+        height="20"
+      />
+      0
+    </button>
+
+    <button id="dislikeButton">
+      <img
+        src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/08_thumbs_down-512.png"
+        alt="Dislike"
+        width="20"
+        height="20"
+      />
+      0
+    </button>
+
+    <script>
+      var likeButton = document.getElementById("likeButton"),
+        likeCount = 0;
+      likeButton.onclick = function () {
+        likeCount += 1;
+        likeButton.innerHTML =
+          '<img src="https://i.pinimg.com/originals/39/44/6c/39446caa52f53369b92bc97253d2b2f1.png" alt="Like" width="20" height="20">' +
+          likeCount;
+      };
+
+      var dislikeButton = document.getElementById("dislikeButton"),
+        dislikeCount = 0;
+      dislikeButton.onclick = function () {
+        dislikeCount += 1;
+        dislikeButton.innerHTML =
+          '<img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/08_thumbs_down-512.png" alt="Like" width="20" height="20">' +
+          dislikeCount;
+      };
+    </script>
+  </body>
+</html>
